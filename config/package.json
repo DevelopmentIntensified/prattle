@@ -1,0 +1,9 @@
+{
+  "name": "@prattle/config",
+  "version": "1.0.0",
+  "description": "config file containing config files",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "type": "module"
+}

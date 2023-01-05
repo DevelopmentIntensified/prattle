@@ -1,0 +1,24 @@
+{
+  "name": "prattle",
+  "version": "1.0.0",
+  "description": "the official prattle repo",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "client",
+    "backend",
+    "config",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn --cwd backend start",
+    "build": "yarn --cwd client build",
+    "test": "yarn --cwd client test",
+    "emulators:start": ""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.3.0"
+  }
+}
