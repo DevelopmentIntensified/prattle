@@ -13,7 +13,7 @@
     "vitest": "^0.28.1"
   },
   "scripts": {
-    "test": "vitest --verbose",
+    "test": "npx vitest --verbose",
     "build": "yarn install && npx tsc & npx vite build"
   }
 }

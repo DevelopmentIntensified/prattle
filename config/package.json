@@ -2,8 +2,15 @@
   "name": "@prattle/config",
   "version": "1.0.0",
   "description": "config file containing config files",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "vite": "^4.0.4",
+    "vitest": "^0.28.3"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^3.0.1"
+  }
 }

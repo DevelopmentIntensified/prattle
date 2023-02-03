@@ -1,4 +1,4 @@
-import react from '@vitejs/plugin-react'
+import react from "@vitejs/plugin-react";
 
 /**
  * Build configuration for client code, executed in the browser
@@ -10,13 +10,13 @@ export default {
 
   build: {
     lib: {
-      entry: 'src/index.js'
+      entry: "src/index.js"
     },
     external: [
-      'react',
-      'react-dom',
-      'react-router'
+      "react",
+      "react-dom",
+      "react-router"
     ],
-    minify: 'eslint'
+    minify: true
   }
-}
+};

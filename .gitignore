@@ -1,1 +1,8 @@
-node_modules/
+*node_modules/
+*.yarn
+*yarn.lock
+*.env
+*.env.*
+.pnp*
+.yarn*
+yarn.lock
