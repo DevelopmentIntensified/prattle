@@ -1,0 +1,64 @@
+{
+  "chat_1": {
+    "name": "chat1",
+    "creator": "bob1",
+    "id": "chat_1",
+    "users": ["bob1", "bob3"],
+    "messageCount":2,
+    "deletedMessageCount":0,
+    "_C_messages": {
+      "_D_message1":{
+        "message": "hi there",
+        "user": "bob1",
+        "timeSent": 1667088687379,
+        "timeUpdated": 1667088704986,
+        "orderNumber":0,
+        "type": "USER_message"
+      },
+      "_D_message2":{
+        "message": "hi there",
+        "user": "bob3",
+        "timeSent": 1667088704986,
+        "timeUpdated": 1667088704986,
+        "orderNumber":1,
+        "type": "USER_message"
+      }
+    }
+  },
+  "chat_2": {
+    "name": "james's chat",
+    "creator": "jamesTheDog",
+    "id": "chat_2",
+    "users": ["jamesTheDog"],
+    "admins": ["jamesTheDog"],
+    "messageCount":2,
+    "deletedMessageCount":0,
+    "_C_messages": {
+      "_D_message1":{
+        "message": "hi there",
+        "user": "jamesTheDog",
+        "timeSent": 1667088687379,
+        "timeUpdated": 1667088704986,
+        "orderNumber":0,
+        "type": "USER_message"
+      },
+      "_D_message2":{
+        "message": "test?",
+        "user": "jamesTheDog",
+        "timeSent": 1667088704986,
+        "timeUpdated": 1667088704986,
+        "orderNumber":1,
+        "type": "USER_message"
+      },
+      "_D_message3":{
+        "message": "test2?",
+        "user": "jamesTheDog",
+        "timeSent": 1667088705987,
+        "timeUpdated": 1667088705987,
+        "orderNumber":1,
+        "type": "USER_message"
+      }
+    }
+  },
+  "withNoData": {}
+}

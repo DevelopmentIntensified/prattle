@@ -1,19 +1,20 @@
 {
-  "name": "@prattle/utils",
+  "name": "@prattle/models",
   "version": "1.0.0",
   "description": "utils",
-  "main": "index.js",
+  "main": "index.ts",
   "author": "koalaknightmi",
   "license": "MIT",
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@vitest/ui": "^0.25.8",
+    "firebase-admin": "^11.5.0",
     "typescript": "^4.9.4",
     "vite": "^4.0.0",
     "vitest": "^0.28.1"
   },
   "scripts": {
-    "test": "npx vitest --verbose",
-    "build": "yarn install && npx tsc & npx vite build"
+    "build": "yarn && npx tsc & npx vite build"
   }
 }

@@ -1,17 +1,18 @@
+import { defineConfig, PluginOption } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 /**
  * Build configuration for server code, executed by NodeJS
  */
-export default {
+export default defineConfig({
+  plugins: [tsconfigPaths() as PluginOption],
   build: {
     lib: {
-      entry: "src/index.js"
+      entry: "index.ts"
     },
     rollupOptions: {
       // Do not bundle third-party dependencies,
       // since server packages can get them via npm install
-      external: [
-        "express",
-      ],
+      external: ["express"],
       output: {
         globals: {
           // "fastify": "fastify",
@@ -22,4 +23,4 @@ export default {
     },
     minify: true
   }
-};
+});

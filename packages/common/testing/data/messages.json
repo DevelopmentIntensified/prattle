@@ -1,0 +1,21 @@
+{
+  "messages":[
+    {
+      "message": "hi there",
+      "creatorAuthId": "bob1",
+      "id": "message1",
+      "type": "normal_user"
+    },
+    {
+      "message": "hi back",
+      "creatorAuthId": "bob2",
+      "id": "message2",
+      "type": "normal_user"
+    },{
+      "message": "user: 'bob1' joined the chat",
+      "creatorAuthId": "bob1",
+      "id": "message3",
+      "type": "userJoined_server"
+    }
+  ]
+}

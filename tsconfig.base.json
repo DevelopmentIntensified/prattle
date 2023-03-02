@@ -1,23 +1,20 @@
 {
   "compilerOptions": {
-    "target": "esnext" ,
-    "types": [
-      "vitest/globals"
-    ],
+    "target": "esnext",
     "resolveJsonModule": true,
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "sourceMap": true,
     "skipLibCheck": true
   },
-  "exclude": [
-    "**/tests",
-    "node_modules",
-    "**/*.test.ts",
-    "**/*.mock.ts"
-  ]
+  "exclude": ["**/tests", "node_modules", "**/*.test.ts", "**/*.mock.ts"]
 }

@@ -1,11 +1,17 @@
+import tsconfigPaths from "vite-tsconfig-paths";
+import { PluginOption, defineConfig } from "vite";
 /**
  * Build configuration for common (isomorphic) code
  */
-export default {
+export default defineConfig({
+  plugins: [tsconfigPaths() as PluginOption],
   build: {
     lib: {
-      entry: "src/index.ts"
+      entry: "index.ts"
     },
-    minify: true
+    minify: true,
+    rollupOptions: {
+      external: []
+    }
   }
-};
+});

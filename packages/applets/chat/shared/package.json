@@ -1,0 +1,17 @@
+{
+  "name": "@prattle/chat-shared",
+  "version": "1.0.0",
+  "description": "utils",
+  "main": "index.ts",
+  "author": "koalaknightmi",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.0"
+  },
+  "scripts": {
+    "build": "yarn install && npx tsc && npx vite build"
+  }
+}

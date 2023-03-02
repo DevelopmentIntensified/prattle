@@ -6,9 +6,9 @@ export default merge;
  * @param source Object with custom values
  * @author inspired by [jhildenbiddle](https://stackoverflow.com/a/48218209).
  */
-function mergeWith (target: object, source: object) : object {
+function mergeWith(target: object, source: object): object {
   const isObject = (obj: unknown) => obj && typeof obj === "object";
-  (Object.keys(source) as (keyof typeof source)[]).forEach(key => {
+  (Object.keys(source) as (keyof typeof source)[]).forEach((key) => {
     const targetValue = target[key] as unknown;
     const sourceValue = source[key] as unknown;
 
@@ -16,7 +16,10 @@ function mergeWith (target: object, source: object) : object {
       (target[key] as Array<unknown>) = targetValue.concat(sourceValue);
     } else if (isObject(targetValue) && isObject(sourceValue)) {
       // eslint-disable-next-line @typescript-eslint/no-use-before-define
-      (target[key] as object) = merge(Object.assign({}, targetValue), sourceValue as object);
+      (target[key] as object) = merge(
+        Object.assign({}, targetValue),
+        sourceValue as object
+      );
     } else {
       (target[key] as typeof sourceValue) = sourceValue;
     }
@@ -29,7 +32,7 @@ function mergeWith (target: object, source: object) : object {
  * Recursively merges the specified object instances
  * @param instances Instances to merge, from left to right
  */
-function merge (...instances: object[]) : object {
+function merge(...instances: object[]): object {
   let i = instances.length - 1;
   while (i > 0) {
     instances[i - 1] = mergeWith(instances[i - 1], instances[i]);

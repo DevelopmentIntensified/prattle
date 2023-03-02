@@ -1,0 +1,28 @@
+{
+  "name": "@prattle/chat-server",
+  "version": "1.0.0",
+  "description": "utils",
+  "main": "index.ts",
+  "author": "koalaknightmi",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@prattle/testing": "workspace:^",
+    "@vitest/ui": "^0.25.8",
+    "firebase-admin": "^11.5.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.0",
+    "vitest": "^0.28.5"
+  },
+  "scripts": {
+    "test": "yarn && vitest",
+    "test:ui": "yarn && vitest --ui",
+    "build": "yarn && tsc && vite build"
+  },
+  "dependencies": {
+    "@prattle/chat-shared": "workspace:^",
+    "@prattle/models": "workspace:^",
+    "socket.io": "^4.6.0"
+  }
+}

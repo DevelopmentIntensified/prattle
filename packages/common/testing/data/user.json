@@ -1,0 +1,22 @@
+{
+  "email": "",
+  "userName": "",
+  "role": "user",
+  "friends": [],
+  "state": "",
+  "banned": false,
+  "settings": {
+    "nameColor": "black",
+    "profileImgURL": "",
+    "useDefaultImg": true,
+    "useCustomImg": false
+  },
+  "devices":[],
+  "chats":{
+    "personalChat":{
+      "lastSeenMessage":0,
+      "veiws":0,
+      "lastViewed":0
+    }
+  }
+}

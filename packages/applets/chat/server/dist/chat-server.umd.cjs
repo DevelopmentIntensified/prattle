@@ -1,0 +1,1 @@
+(function(n,e){typeof exports=="object"&&typeof module<"u"?module.exports=e():typeof define=="function"&&define.amd?define(e):(n=typeof globalThis<"u"?globalThis:n||self,n["@prattle/chat-server"]=e())})(this,function(){"use strict";return async e=>{const t=e.of("/chat");e.of("/user"),t.on("connection",o=>{o.on("created",d=>{})})}});
