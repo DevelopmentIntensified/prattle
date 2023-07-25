@@ -15,5 +15,10 @@ export default defineConfig({
       external: ["react", "react-dom", "react-router"]
     },
     minify: true
+  },
+  server: {
+    watch: {
+      ignored: ["!**/node_modules/**"]
+    }
   }
 });

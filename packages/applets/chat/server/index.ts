@@ -20,7 +20,7 @@ export default async (io: Server) => {
 
   chatNamespace.on("connection", (socket) => {
     socket.on("created", (data) => {
-      //userNamespace.serverSideEmit("userJoinedChat");
+      userNamespace.serverSideEmit("userJoinedChat", socket.id);
     });
   });
 };

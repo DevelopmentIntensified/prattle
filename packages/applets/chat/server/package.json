@@ -22,7 +22,9 @@
   },
   "dependencies": {
     "@prattle/chat-shared": "workspace:^",
+    "@prattle/database": "workspace:^",
     "@prattle/models": "workspace:^",
+    "@prattle/utils": "workspace:^",
     "socket.io": "^4.6.0"
   }
 }

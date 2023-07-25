@@ -1,0 +1,44 @@
+{
+  "name": "@prattle/ui",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/material-icons": "^4.5.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.11.1",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.0.10",
+    "@storybook/addon-interactions": "7.0.10",
+    "@storybook/addon-links": "7.0.10",
+    "@storybook/blocks": "7.0.10",
+    "@storybook/builder-vite": "^7.0.10",
+    "@storybook/react": "7.0.10",
+    "@storybook/react-vite": "7.0.10",
+    "@storybook/testing-library": "0.1.0",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-react": "^4.0.0",
+    "prop-types": "15.8.1",
+    "storybook": "7.0.10",
+    "storybook-addon-react-router-v6": "^1.0.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.5"
+  }
+}

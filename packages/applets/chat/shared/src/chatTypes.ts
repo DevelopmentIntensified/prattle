@@ -1,18 +1,5 @@
-export interface MessageDataType {
-  message: string;
-  creatorAuthId: string;
-  type: string;
-  timeSent: number;
-  timeUpdated: number;
-  orderNumber: number;
-}
-
-export interface MessageType extends MessageDataType {
-  oldMessage: boolean;
-  updated: boolean;
-}
-
-export interface serializedMessageHandlerType {
+import { MessageType } from "@prattle/models";
+export interface deserializedMessageHandlerType {
   savedMessageCount: number;
   deletedMessageCount: number;
   messageCount: number;
@@ -20,13 +7,13 @@ export interface serializedMessageHandlerType {
   deletedMessages: { [id: string]: MessageType };
 }
 
-export type serializedChatType = {
+export type deserializedChatType = {
   creator: string;
   name: string;
   id: string;
   users: string[];
   onlineUsers: { [id: string]: string };
-  MessageHandler: serializedMessageHandlerType;
+  MessageHandler: deserializedMessageHandlerType;
   admins: string[];
   lastSync: number;
 };

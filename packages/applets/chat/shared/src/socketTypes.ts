@@ -1,4 +1,4 @@
-import { serializedChatType } from "./chatTypes";
+import { deserializedChatType } from "./chatTypes";
 
 type chatCreatedClient = {
   name: string;
@@ -15,9 +15,9 @@ export interface ClientToServerEvents {
 }
 
 export interface ServerToClientEvents {
-  created: (data: serializedChatType) => void;
-  joined: (data: serializedChatType) => void;
-  client_joined: (data: serializedChatType) => void;
+  created: (data: deserializedChatType) => void;
+  joined: (data: deserializedChatType) => void;
+  client_joined: (data: deserializedChatType) => void;
   deleted: (data: chatIdClientEvent) => void;
 }
 

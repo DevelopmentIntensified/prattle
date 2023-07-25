@@ -1,17 +1,17 @@
-import { MessageDataType, MessageType } from "@prattle/chat-shared";
+import { MessageDataType, MessageType } from "@prattle/models";
 import Message from "@prattle/models/src/message/message";
 
 export default class MessageHandler {
-  messages: Map<string, MessageType>;
-  deletedMessages: Map<string, MessageType>;
+  messages: Map<string, Message>;
+  deletedMessages: Map<string, Message>;
 
   constructor(
     public messageCount: number,
     public savedMessageCount: number,
     public deletedMessageCount: number
   ) {
-    this.messages = new Map<string, MessageType>();
-    this.deletedMessages = new Map<string, MessageType>();
+    this.messages = new Map<string, Message>();
+    this.deletedMessages = new Map<string, Message>();
   }
 
   private async messageIdExists(id: string) {
@@ -47,7 +47,8 @@ export default class MessageHandler {
     const messageData = {
       ...messageDataInHandler,
       oldMessage: false,
-      orderNumber: orderNumber ? orderNumber : await this.getMessageCount()
+      orderNumber: orderNumber ? orderNumber : await this.getMessageCount(),
+      updated: false
     };
     this.messages.set(id, new Message(messageData));
     if (!orderNumber) {

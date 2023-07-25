@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "prattle-dev-and-test",
+    "dev-test": "prattle-dev-and-test"
+  },
+  "targets": {},
+  "etags": {}
+}

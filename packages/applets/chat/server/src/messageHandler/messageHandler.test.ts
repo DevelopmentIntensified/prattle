@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import messages from "@prattle/testing/data/messages.json";
 import MessageHandler from "./messageHandler.js";
-import { MessageDataType } from "@prattle/chat-shared";
+import { MessageDataType } from "@prattle/models";
 
 const messageHandler = new MessageHandler(0, 0, 0);
 describe("message handler class", () => {
@@ -65,7 +65,7 @@ describe("message handler class", () => {
   )(
     "should restore recently deleted message with data: %o",
     async (message) => {
-      messageHandler.restoreRecentlyDeletedMessage(message.id);
+      await messageHandler.restoreRecentlyDeletedMessage(message.id);
 
       const messages = await messageHandler.getMessages();
       const deletedMessages = await messageHandler.getDeletedMessages();

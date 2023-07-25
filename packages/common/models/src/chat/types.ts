@@ -15,12 +15,12 @@ export interface MessageHandlerType {
   savedMessageCount: number;
   deletedMessageCount: number;
   messageCount: number;
-  messages: Map<string, typeof Message>;
-  deletedMessages: Map<string, typeof Message>;
+  messages: Map<string, Message>;
+  deletedMessages: Map<string, Message>;
   newMessage(
     messageDataInHandler: MessageDataType,
     id?: string
-  ): Promise<typeof Message>;
+  ): Promise<Message>;
   deleteMessage(id: string): Promise<void>;
   updateMessage(
     id: string,
@@ -29,8 +29,8 @@ export interface MessageHandlerType {
     oldMessage: boolean
   ): Promise<void>;
   restoreRecentlyDeletedMessage(id: string): Promise<void>;
-  getMessage(id: string): Promise<typeof Message>;
-  getMessages(): Promise<Map<string, typeof Message>>;
+  getMessage(id: string): Promise<Message>;
+  getMessages(): Promise<Map<string, Message>>;
   getMessageCount(): Promise<number>;
   getSavedMessageCount(): Promise<number>;
 }

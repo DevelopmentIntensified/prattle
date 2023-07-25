@@ -6,3 +6,5 @@
 .pnp*
 .yarn*
 yarn.lock
+firebase-debug.log
+firestore-debug.log
